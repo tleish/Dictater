@@ -67,7 +67,9 @@
 		27EDB8081B9A1CF400BE21BF /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EDB8071B9A1CF400BE21BF /* Speech.swift */; };
 		27EDB8091B9A1CF400BE21BF /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EDB8071B9A1CF400BE21BF /* Speech.swift */; };
 		27EDB80A1B9A1CF400BE21BF /* Speech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EDB8071B9A1CF400BE21BF /* Speech.swift */; };
-		B4F2CBF2C92EC82AD7D79706 /* Pods_Dictater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8BFCBCBE1D027EF12075A4 /* Pods_Dictater.framework */; };
+		3825AE61FB238CAE1D3255CE /* Pods_Dictater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA444787CAEC704DA19F1481 /* Pods_Dictater.framework */; };
+		45550A13FABD6B62C13BA3D6 /* Pods_DictaterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120CD8B0ACE483F04136804B /* Pods_DictaterUITests.framework */; };
+		5868E32935E9EE709A98CFFA /* Pods_DictaterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F0B3E67850B0EC48464DA7 /* Pods_DictaterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		120CD8B0ACE483F04136804B /* Pods_DictaterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictaterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2701F40C1BB889C200845078 /* TeleprompterWindowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeleprompterWindowDelegate.swift; sourceTree = "<group>"; };
 		272B764F1B979D5900712AA5 /* Dictater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dictater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272B76521B979D5900712AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,9 +141,14 @@
 		27EDB7FE1B9A17BA00BE21BF /* EnableServiceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnableServiceController.swift; sourceTree = "<group>"; };
 		27EDB8021B9A193900BE21BF /* Vocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vocalization.swift; sourceTree = "<group>"; };
 		27EDB8071B9A1CF400BE21BF /* Speech.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speech.swift; sourceTree = "<group>"; };
-		2C8BFCBCBE1D027EF12075A4 /* Pods_Dictater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dictater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		311E99C2CE3696276AE0D215 /* Pods-Dictater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dictater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dictater/Pods-Dictater.debug.xcconfig"; sourceTree = "<group>"; };
-		87B17EDA9EB11151FD483436 /* Pods-Dictater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dictater.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dictater/Pods-Dictater.release.xcconfig"; sourceTree = "<group>"; };
+		354C32439A374B0B64C8B64A /* Pods-DictaterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictaterUITests.debug.xcconfig"; path = "Target Support Files/Pods-DictaterUITests/Pods-DictaterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B0388A4627B01823BC660F5 /* Pods-DictaterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictaterTests.debug.xcconfig"; path = "Target Support Files/Pods-DictaterTests/Pods-DictaterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80F0B3E67850B0EC48464DA7 /* Pods_DictaterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictaterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3847B264380F2422972805 /* Pods-Dictater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dictater.release.xcconfig"; path = "Target Support Files/Pods-Dictater/Pods-Dictater.release.xcconfig"; sourceTree = "<group>"; };
+		95DFF954E2BA4E6A449020B0 /* Pods-Dictater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dictater.debug.xcconfig"; path = "Target Support Files/Pods-Dictater/Pods-Dictater.debug.xcconfig"; sourceTree = "<group>"; };
+		BD55586CB4455001E425B1F1 /* Pods-DictaterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictaterUITests.release.xcconfig"; path = "Target Support Files/Pods-DictaterUITests/Pods-DictaterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4F4B17386012D476DCF9055 /* Pods-DictaterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictaterTests.release.xcconfig"; path = "Target Support Files/Pods-DictaterTests/Pods-DictaterTests.release.xcconfig"; sourceTree = "<group>"; };
+		CA444787CAEC704DA19F1481 /* Pods_Dictater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dictater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				279379A51BACB8B700FFF21C /* Sparkle.framework in Frameworks */,
-				B4F2CBF2C92EC82AD7D79706 /* Pods_Dictater.framework in Frameworks */,
+				3825AE61FB238CAE1D3255CE /* Pods_Dictater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5868E32935E9EE709A98CFFA /* Pods_DictaterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45550A13FABD6B62C13BA3D6 /* Pods_DictaterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,8 +187,8 @@
 				272B76631B979D5A00712AA5 /* DictaterTests */,
 				272B766E1B979D5A00712AA5 /* DictaterUITests */,
 				272B76501B979D5900712AA5 /* Products */,
-				DC02CA0E01E7CE4FD7018D35 /* Pods */,
-				B297430C4CFD86BD126F0460 /* Frameworks */,
+				6AEC728CB08053D7364E7235 /* Pods */,
+				75DA7402ADD5CF59D78BCEDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,21 +305,28 @@
 			name = Cocoa;
 			sourceTree = "<group>";
 		};
-		B297430C4CFD86BD126F0460 /* Frameworks */ = {
+		6AEC728CB08053D7364E7235 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2C8BFCBCBE1D027EF12075A4 /* Pods_Dictater.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC02CA0E01E7CE4FD7018D35 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				311E99C2CE3696276AE0D215 /* Pods-Dictater.debug.xcconfig */,
-				87B17EDA9EB11151FD483436 /* Pods-Dictater.release.xcconfig */,
+				95DFF954E2BA4E6A449020B0 /* Pods-Dictater.debug.xcconfig */,
+				8A3847B264380F2422972805 /* Pods-Dictater.release.xcconfig */,
+				4B0388A4627B01823BC660F5 /* Pods-DictaterTests.debug.xcconfig */,
+				C4F4B17386012D476DCF9055 /* Pods-DictaterTests.release.xcconfig */,
+				354C32439A374B0B64C8B64A /* Pods-DictaterUITests.debug.xcconfig */,
+				BD55586CB4455001E425B1F1 /* Pods-DictaterUITests.release.xcconfig */,
 			);
 			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		75DA7402ADD5CF59D78BCEDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA444787CAEC704DA19F1481 /* Pods_Dictater.framework */,
+				80F0B3E67850B0EC48464DA7 /* Pods_DictaterTests.framework */,
+				120CD8B0ACE483F04136804B /* Pods_DictaterUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,13 +336,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272B76741B979D5A00712AA5 /* Build configuration list for PBXNativeTarget "Dictater" */;
 			buildPhases = (
-				F28FACF5168B48B7ACE54980 /* Check Pods Manifest.lock */,
+				8939908CFAE3DF11D8616149 /* [CP] Check Pods Manifest.lock */,
 				272B764B1B979D5900712AA5 /* Sources */,
 				272B764C1B979D5900712AA5 /* Frameworks */,
 				272B764D1B979D5900712AA5 /* Resources */,
 				279379A61BACB8D300FFF21C /* CopyFiles */,
-				84C1C55B07EEECD2362DD6D2 /* Embed Pods Frameworks */,
-				637D6377BFB0CA69C32B8B23 /* Copy Pods Resources */,
+				3375DA6A05967B80AE502276 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +356,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272B76771B979D5A00712AA5 /* Build configuration list for PBXNativeTarget "DictaterTests" */;
 			buildPhases = (
+				00814F7F1E1D8AE746CEB7DA /* [CP] Check Pods Manifest.lock */,
 				272B765C1B979D5A00712AA5 /* Sources */,
 				272B765D1B979D5A00712AA5 /* Frameworks */,
 				272B765E1B979D5A00712AA5 /* Resources */,
@@ -358,6 +375,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272B767A1B979D5A00712AA5 /* Build configuration list for PBXNativeTarget "DictaterUITests" */;
 			buildPhases = (
+				94C0DB57DEE7DBF6B47F4BE2 /* [CP] Check Pods Manifest.lock */,
 				272B76671B979D5A00712AA5 /* Sources */,
 				272B76681B979D5A00712AA5 /* Frameworks */,
 				272B76691B979D5A00712AA5 /* Resources */,
@@ -399,6 +417,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -453,49 +472,88 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		637D6377BFB0CA69C32B8B23 /* Copy Pods Resources */ = {
+		00814F7F1E1D8AE746CEB7DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DictaterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dictater/Pods-Dictater-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84C1C55B07EEECD2362DD6D2 /* Embed Pods Frameworks */ = {
+		3375DA6A05967B80AE502276 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dictater/Pods-Dictater-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProgressKit/ProgressKit.framework",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dictater/Pods-Dictater-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dictater/Pods-Dictater-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F28FACF5168B48B7ACE54980 /* Check Pods Manifest.lock */ = {
+		8939908CFAE3DF11D8616149 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dictater-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C0DB57DEE7DBF6B47F4BE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DictaterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -664,7 +722,7 @@
 		};
 		272B76751B979D5A00712AA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 311E99C2CE3696276AE0D215 /* Pods-Dictater.debug.xcconfig */;
+			baseConfigurationReference = 95DFF954E2BA4E6A449020B0 /* Pods-Dictater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -682,12 +740,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyleacarson.Dictater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		272B76761B979D5A00712AA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87B17EDA9EB11151FD483436 /* Pods-Dictater.release.xcconfig */;
+			baseConfigurationReference = 8A3847B264380F2422972805 /* Pods-Dictater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -705,11 +764,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyleacarson.Dictater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		272B76781B979D5A00712AA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0388A4627B01823BC660F5 /* Pods-DictaterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -723,6 +784,7 @@
 		};
 		272B76791B979D5A00712AA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4F4B17386012D476DCF9055 /* Pods-DictaterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -736,6 +798,7 @@
 		};
 		272B767B1B979D5A00712AA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354C32439A374B0B64C8B64A /* Pods-DictaterUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DictaterUITests/Info.plist;
@@ -749,6 +812,7 @@
 		};
 		272B767C1B979D5A00712AA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD55586CB4455001E425B1F1 /* Pods-DictaterUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = DictaterUITests/Info.plist;

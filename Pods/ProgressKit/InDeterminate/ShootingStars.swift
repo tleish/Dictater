@@ -10,8 +10,8 @@ import Foundation
 import Cocoa
 
 @IBDesignable
-public class ShootingStars: IndeterminateAnimation {
-    private let animationDuration = 1.0
+open class ShootingStars: IndeterminateAnimation {
+    fileprivate let animationDuration = 1.0
 
     var starLayer1 = CAShapeLayer()
     var starLayer2 = CAShapeLayer()
@@ -20,8 +20,8 @@ public class ShootingStars: IndeterminateAnimation {
 
     override func notifyViewRedesigned() {
         super.notifyViewRedesigned()
-        starLayer1.backgroundColor = foreground.CGColor
-        starLayer2.backgroundColor = foreground.CGColor
+        starLayer1.backgroundColor = foreground.cgColor
+        starLayer2.backgroundColor = foreground.cgColor
     }
 
     override func configureLayers() {
@@ -37,12 +37,12 @@ public class ShootingStars: IndeterminateAnimation {
         do {
             starLayer1.position = CGPoint(x: dimension / 2, y: dimension / 2)
             starLayer1.bounds.size = CGSize(width: starWidth, height: dimension)
-            starLayer1.backgroundColor = foreground.CGColor
+            starLayer1.backgroundColor = foreground.cgColor
             self.layer?.addSublayer(starLayer1)
             
             starLayer2.position = CGPoint(x: rect.midX, y: dimension / 2)
             starLayer2.bounds.size = CGSize(width: starWidth, height: dimension)
-            starLayer2.backgroundColor = foreground.CGColor
+            starLayer2.backgroundColor = foreground.cgColor
             self.layer?.addSublayer(starLayer2)
         }
         
@@ -51,9 +51,9 @@ public class ShootingStars: IndeterminateAnimation {
             animation.fromValue = -dimension
             animation.toValue = rect.width * 0.9
             animation.duration = animationDuration
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-            animation.removedOnCompletion = false
-            animation.repeatCount = Float.infinity
+            animation.timingFunction = CAMediaTimingFunction(name: .easeIn)
+            animation.isRemovedOnCompletion = false
+            animation.repeatCount = .infinity
         }
         
         /** Temp animation will be removed after first animation
@@ -64,21 +64,23 @@ public class ShootingStars: IndeterminateAnimation {
         tempAnimation.toValue = rect.width
         tempAnimation.delegate = self
         tempAnimation.duration = animationDuration / 2
-        tempAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
+        tempAnimation.timingFunction = CAMediaTimingFunction(name: .easeIn)
     }
-    
-    override public func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        starLayer2.addAnimation(animation, forKey: "default")
-    }
-    
+
     //MARK: Indeterminable protocol
     override func startAnimation() {
-        starLayer1.addAnimation(animation, forKey: "default")
-        starLayer2.addAnimation(tempAnimation, forKey: "tempAnimation")
+        starLayer1.add(animation, forKey: "default")
+        starLayer2.add(tempAnimation, forKey: "tempAnimation")
     }
     
     override func stopAnimation() {
         starLayer1.removeAllAnimations()
         starLayer2.removeAllAnimations()
+    }
+}
+
+extension ShootingStars: CAAnimationDelegate {
+    open func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        starLayer2.add(animation, forKey: "default")
     }
 }

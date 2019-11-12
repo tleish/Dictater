@@ -1,5 +1,11 @@
 
-![Image](/Images/banner.gif)
+![ProgressKit Banner](/Images/banner.gif)
+
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/ProgressKit.svg)](https://img.shields.io/cocoapods/v/ProgressKit.svg)
+[![Platform](https://img.shields.io/cocoapods/p/ProgressKit.svg?style=flat)](http://cocoadocs.org/docsets/ProgressKit)
+[![License](https://img.shields.io/cocoapods/l/ProgressKit.svg?style=flat)](http://cocoadocs.org/docsets/ProgressKit)
+
+
 
 `ProgressKit` has set of cool `IBDesignable` progress views, with huge customisation options. 
 You can now make spinners, progress bar, crawlers etc, which can be finely customised according to your app palette.
@@ -8,14 +14,14 @@ You can now make spinners, progress bar, crawlers etc, which can be finely custo
 - [Installation](#installation)
 - [Usage](#usage)
 - [Indeterminate Progress](#indeterminate-progress)
-  - [CircularSnail](#circularsnail)
+  - [MaterialProgress](#MaterialProgress)
   - [Rainbow](#rainbow)
   - [Crawler](#crawler)
   - [Spinner](#spinner)
   - [Shooting Stars](#shooting-stars)
   - [Rotating Arc](#rotating-arc)
 - [Determinate Progress](#determinate-progress)
-  - [Circular Progress] (#circular-progress)
+  - [Circular Progress](#circular-progress)
   - [Progress Bar](#progress-bar)
 - [License](#license)
 
@@ -29,6 +35,11 @@ To integrate ProgressKit into your Xcode project using CocoaPods, specify it in 
 use_frameworks!
 
 pod 'ProgressKit'
+```
+For Swift 3 install directly from `swift-3` branch form github
+
+```ruby
+pod 'ProgressKit', :git => "https://github.com/kaunteya/ProgressKit.git", :branch => 'swift-3'
 ```
 
 Then, run the following command:
@@ -55,7 +66,7 @@ Progress indicators which animate indefinately are `Indeterminate Progress` View
 
 This are the set of Indeterminate Progress Indicators.
 
-## CircularSnail
+## MaterialProgress
 ![CircularSnail](/Images/CircularSnail.gif)
 
 ## Rainbow

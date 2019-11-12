@@ -5,7 +5,7 @@ use_frameworks!
 platform :osx, '10.10'
 
 target 'Dictater' do
-	pod 'ProgressKit', '~> 0.4'
+	pod 'ProgressKit', :git => "https://github.com/kaunteya/ProgressKit.git", :branch => 'master'
 end
 
 target 'DictaterTests' do

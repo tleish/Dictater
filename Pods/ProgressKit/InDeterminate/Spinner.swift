@@ -10,7 +10,7 @@ import Foundation
 import Cocoa
 
 @IBDesignable
-public class Spinner: IndeterminateAnimation {
+open class Spinner: IndeterminateAnimation {
     
     var basicShape = CAShapeLayer()
     var containerLayer = CAShapeLayer()
@@ -18,43 +18,43 @@ public class Spinner: IndeterminateAnimation {
     
     var animation: CAKeyframeAnimation = {
         var animation = CAKeyframeAnimation(keyPath: "transform.rotation")
-        animation.repeatCount = Float.infinity
-        animation.calculationMode = kCAAnimationDiscrete
+        animation.repeatCount = .infinity
+        animation.calculationMode = .discrete
         return animation
         }()
 
-    @IBInspectable var starSize:CGSize = CGSize(width: 6, height: 15) {
+    @IBInspectable open var starSize:CGSize = CGSize(width: 6, height: 15) {
         didSet {
             notifyViewRedesigned()
         }
     }
 
-    @IBInspectable var roundedCorners: Bool = true {
+    @IBInspectable open var roundedCorners: Bool = true {
         didSet {
             notifyViewRedesigned()
         }
     }
 
     
-    @IBInspectable var distance: CGFloat = CGFloat(20) {
+    @IBInspectable open var distance: CGFloat = CGFloat(20) {
         didSet {
             notifyViewRedesigned()
         }
     }
 
-    @IBInspectable var starCount: Int = 10 {
+    @IBInspectable open var starCount: Int = 10 {
         didSet {
             notifyViewRedesigned()
         }
     }
 
-    @IBInspectable var duration: Double = 1 {
+    @IBInspectable open var duration: Double = 1 {
         didSet {
             animation.duration = duration
         }
     }
 
-    @IBInspectable var clockwise: Bool = false {
+    @IBInspectable open var clockwise: Bool = false {
         didSet {
             notifyViewRedesigned()
         }
@@ -72,12 +72,12 @@ public class Spinner: IndeterminateAnimation {
     
     override func notifyViewRedesigned() {
         super.notifyViewRedesigned()
-        starList.removeAll(keepCapacity: true)
+        starList.removeAll(keepingCapacity: true)
         containerLayer.sublayers = nil
         animation.values = [Double]()
-
-        for var i = 0.0; i < 360; i = i + Double(360 / starCount) {
-            var iRadian = CGFloat(i * M_PI / 180.0)
+        var i = 0.0
+        while i < 360 {
+            var iRadian = CGFloat(i * Double.pi / 180.0)
             if clockwise { iRadian = -iRadian }
 
             animation.values?.append(iRadian)
@@ -88,7 +88,7 @@ public class Spinner: IndeterminateAnimation {
 
             starShape.frame = CGRect(origin: centerLocation, size: starSize)
 
-            starShape.backgroundColor = foreground.CGColor
+            starShape.backgroundColor = foreground.cgColor
             starShape.anchorPoint = CGPoint(x: 0.5, y: 0)
 
             var  rotation: CATransform3D = CATransform3DMakeTranslation(0, 0, 0.0);
@@ -100,11 +100,12 @@ public class Spinner: IndeterminateAnimation {
             starShape.opacity = Float(360 - i) / 360
             containerLayer.addSublayer(starShape)
             starList.append(starShape)
+            i = i + Double(360 / starCount)
         }
     }
 
     override func startAnimation() {
-        containerLayer.addAnimation(animation, forKey: "rotation")
+        containerLayer.add(animation, forKey: "rotation")
     }
     
     override func stopAnimation() {

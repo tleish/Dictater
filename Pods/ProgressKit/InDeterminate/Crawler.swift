@@ -9,12 +9,12 @@
 import Foundation
 import Cocoa
 
-private let defaultForegroundColor = NSColor.whiteColor()
+private let defaultForegroundColor = NSColor.white
 private let defaultBackgroundColor = NSColor(white: 0.0, alpha: 0.4)
 private let duration = 1.2
 
 @IBDesignable
-public class Crawler: IndeterminateAnimation {
+open class Crawler: IndeterminateAnimation {
     
     var starList = [CAShapeLayer]()
 
@@ -27,46 +27,47 @@ public class Crawler: IndeterminateAnimation {
     override func notifyViewRedesigned() {
         super.notifyViewRedesigned()
         for star in starList {
-            star.backgroundColor = foreground.CGColor
+            star.backgroundColor = foreground.cgColor
         }
     }
+    
     override func configureLayers() {
         super.configureLayers()
         let rect = self.bounds
         let insetRect = NSInsetRect(rect, rect.width * 0.15, rect.width * 0.15)
 
-        for var i = 0.0; i < 5; i++ {
+        for i in 0 ..< 5 {
             let starShape = CAShapeLayer()
             starList.append(starShape)
-            starShape.backgroundColor = foreground.CGColor
+            starShape.backgroundColor = foreground.cgColor
 
-            let circleWidth = smallCircleSize - i * 2
+            let circleWidth = smallCircleSize - Double(i) * 2
             starShape.bounds = CGRect(x: 0, y: 0, width: circleWidth, height: circleWidth)
             starShape.cornerRadius = CGFloat(circleWidth / 2)
             starShape.position = CGPoint(x: rect.midX, y: rect.midY + insetRect.height / 2)
             self.layer?.addSublayer(starShape)
 
             let arcPath = NSBezierPath()
-            arcPath.appendBezierPathWithArcWithCenter(insetRect.mid, radius: insetRect.width / 2, startAngle: 90, endAngle: -360 + 90, clockwise: true)
+            arcPath.appendArc(withCenter: insetRect.mid, radius: insetRect.width / 2, startAngle: 90, endAngle: -360 + 90, clockwise: true)
 
             let rotationAnimation = CAKeyframeAnimation(keyPath: "position")
             rotationAnimation.path = arcPath.CGPath
-            rotationAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
-            rotationAnimation.beginTime = (duration * 0.075) * i
-            rotationAnimation.calculationMode = kCAAnimationCubicPaced
+            rotationAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+            rotationAnimation.beginTime = (duration * 0.075) * Double(i)
+            rotationAnimation.calculationMode = .cubicPaced
 
             let animationGroup = CAAnimationGroup()
             animationGroup.animations = [rotationAnimation]
             animationGroup.duration = duration
-            animationGroup.repeatCount = Float.infinity
+            animationGroup.repeatCount = .infinity
             animationGroups.append(animationGroup)
 
         }
     }
 
     override func startAnimation() {
-        for (index, star) in starList.enumerate() {
-            star.addAnimation(animationGroups[index], forKey: "")
+        for (index, star) in starList.enumerated() {
+            star.add(animationGroups[index], forKey: "")
         }
     }
 

@@ -1,10 +1,22 @@
 PODS:
-  - ProgressKit (0.4.1)
+  - ProgressKit (0.8)
 
 DEPENDENCIES:
-  - ProgressKit (~> 0.4)
+  - ProgressKit (from `https://github.com/kaunteya/ProgressKit.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  ProgressKit:
+    :branch: master
+    :git: https://github.com/kaunteya/ProgressKit.git
+
+CHECKOUT OPTIONS:
+  ProgressKit:
+    :commit: 6d011fd5234e2d4a6435d670541416eebec8dd1d
+    :git: https://github.com/kaunteya/ProgressKit.git
 
 SPEC CHECKSUMS:
-  ProgressKit: d42fd5b9b78a4ff914e9672fb2b76f570f9da47e
+  ProgressKit: bdb33f50eb73cf2772501a1afca95982919b4506
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 6bb12bed8fde488963e8b821896cdc04938f06ca
+
+COCOAPODS: 1.8.4
