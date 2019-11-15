@@ -47,8 +47,8 @@ class TeleprompterPreferencesController : NSViewController
 		self.fontButton?.action = #selector(self.saveFonts)
 		
 		fontButton?.removeAllItems()
-		fontButton?.addItemsWithTitles(NSFontManager.sharedFontManager().availableFontFamilies)
-		fontButton?.selectItemWithTitle(Dictater.fontName)
+        fontButton?.addItems(withTitles: NSFontManager.shared.availableFontFamilies)
+        fontButton?.selectItem(withTitle: Dictater.fontName)
 	}
 	
 	func update()
@@ -56,25 +56,25 @@ class TeleprompterPreferencesController : NSViewController
 		let fontSize = Dictater.fontSize
 		if fontSize > self.minFontSize
 		{
-			self.fontSizeDecrementButton?.enabled = true
+            self.fontSizeDecrementButton?.isEnabled = true
 		} else {
-			self.fontSizeDecrementButton?.enabled = false
+            self.fontSizeDecrementButton?.isEnabled = false
 		}
 		
 		
 		let lineHeightMultiple = Dictater.lineHeightMultiple
 		if lineHeightMultiple - self.minLineHeightMultiple > 0.01
 		{
-			self.lineHeightMultipleDecrementButton?.enabled = true
+            self.lineHeightMultipleDecrementButton?.isEnabled = true
 		} else {
-			self.lineHeightMultipleDecrementButton?.enabled = false
+            self.lineHeightMultipleDecrementButton?.isEnabled = false
 		}
 		
 		fontSizeText?.stringValue = "\(fontSize)pt"
 		LineHeightMultipleText?.stringValue = "\(Dictater.lineHeightMultiple)x"
 		
 	}
-	func saveFonts() {
+    @objc func saveFonts() {
 		if let fontButton = self.fontButton,
 		let item = fontButton.selectedItem
 		{

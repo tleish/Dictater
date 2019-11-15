@@ -56,9 +56,9 @@
 		38BF86CDD56B1CF42DD230A351AED52D /* MaterialProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialProgress.swift; path = InDeterminate/MaterialProgress.swift; sourceTree = "<group>"; };
 		3D29F05E827C2A54516815AC4AEFAA2F /* Pods-Dictater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Dictater.debug.xcconfig"; sourceTree = "<group>"; };
 		3E90144C335B05F7CB9504EED224B083 /* Pods-DictaterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DictaterUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		41E8BFC59EFA0842FED06AC35227BAA0 /* Pods_DictaterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DictaterUITests.framework; path = "Pods-DictaterUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41E8BFC59EFA0842FED06AC35227BAA0 /* Pods_DictaterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictaterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		430ED71D0DFDA809983D06D4D73B0A35 /* Pods-Dictater-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Dictater-dummy.m"; sourceTree = "<group>"; };
-		470DFD0AEE7BD8F241288990E44EB2CB /* Pods_DictaterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DictaterTests.framework; path = "Pods-DictaterTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		470DFD0AEE7BD8F241288990E44EB2CB /* Pods_DictaterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictaterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		472D0670ED7564468CF50B433235D6F6 /* DeterminateAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeterminateAnimation.swift; path = Determinate/DeterminateAnimation.swift; sourceTree = "<group>"; };
 		50AE730C8EFA6EE03E705F3784AA98D6 /* IndeterminateAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndeterminateAnimation.swift; path = InDeterminate/IndeterminateAnimation.swift; sourceTree = "<group>"; };
 		51D0DCDFBA17F899B2832D63E5F18A53 /* Pods-DictaterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DictaterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		855DD71A7A675D4D9E0DE63545EE5E84 /* Pods-DictaterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DictaterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8F99E91B67169FF8C414BD0B83930CC1 /* ProgressKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressKit.xcconfig; sourceTree = "<group>"; };
 		9B2C0DB4F43A098D138AE2FC8FD30AC0 /* Pods-DictaterUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DictaterUITests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0A47B716B2D13A27D3B63C52915C8E7 /* Pods-Dictater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Dictater-Info.plist"; sourceTree = "<group>"; };
 		A641CB250E1A24738D481C683AB57175 /* ProgressKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressKit-prefix.pch"; sourceTree = "<group>"; };
 		A7EA7F90BCE402F48EB64D5098802EDB /* CircularProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularProgressView.swift; path = Determinate/CircularProgressView.swift; sourceTree = "<group>"; };
@@ -80,13 +80,13 @@
 		B3352DE200811F228676463BE375FA5F /* Crawler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Crawler.swift; path = InDeterminate/Crawler.swift; sourceTree = "<group>"; };
 		B578DB38E3D5842EC8BC776DAE6642A3 /* RotatingArc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RotatingArc.swift; path = InDeterminate/RotatingArc.swift; sourceTree = "<group>"; };
 		B9423E5E7ACDD902CF5D92957053C233 /* Pods-DictaterUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DictaterUITests-dummy.m"; sourceTree = "<group>"; };
-		BF64E7C1E9FA8EBBAE3E204E583BD376 /* Pods_Dictater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Dictater.framework; path = "Pods-Dictater.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF64E7C1E9FA8EBBAE3E204E583BD376 /* Pods_Dictater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dictater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB99D5E49C03393737EB15A4AEFA63FD /* Pods-DictaterUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DictaterUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CDE9EBBA84C2C0A7848E2A2D7CFE68BE /* Pods-DictaterTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DictaterTests-dummy.m"; sourceTree = "<group>"; };
 		D50F6B737A52800E7864465CBDEC7529 /* Pods-Dictater-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Dictater-umbrella.h"; sourceTree = "<group>"; };
 		D988E6DD12B38A57D4C24A0BA022CAE4 /* Pods-DictaterTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DictaterTests-umbrella.h"; sourceTree = "<group>"; };
 		E582401B02E4BADADD41B180643490A1 /* ProgressKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ProgressKit-Info.plist"; sourceTree = "<group>"; };
-		E67257B78029BFB9E8659BE255771C1D /* ProgressKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ProgressKit.framework; path = ProgressKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67257B78029BFB9E8659BE255771C1D /* ProgressKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4CD1891193C4DC01A6F25550F3072A /* Pods-DictaterUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DictaterUITests-Info.plist"; sourceTree = "<group>"; };
 		F4B46351752268BCC0E253EFD3B196D7 /* Pods-DictaterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DictaterTests.release.xcconfig"; sourceTree = "<group>"; };
 		F530F09CADEDCA7D2763C7F460D2542D /* ProgressKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProgressKit.modulemap; sourceTree = "<group>"; };
@@ -213,7 +213,6 @@
 				80841FB9D4B80E14B6606C8367120AFC /* Spinner.swift */,
 				0A3533965F8594C1E2044FF5262BEBA4 /* Support Files */,
 			);
-			name = ProgressKit;
 			path = ProgressKit;
 			sourceTree = "<group>";
 		};
@@ -389,7 +388,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1120;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -505,7 +504,6 @@
 			baseConfigurationReference = F4B46351752268BCC0E253EFD3B196D7 /* Pods-DictaterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -541,7 +539,6 @@
 			baseConfigurationReference = 1494644EE25D944241E180540FB8B84F /* Pods-Dictater.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -625,8 +622,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -701,7 +697,6 @@
 			baseConfigurationReference = 3E90144C335B05F7CB9504EED224B083 /* Pods-DictaterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -736,7 +731,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F99E91B67169FF8C414BD0B83930CC1 /* ProgressKit.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -771,7 +765,6 @@
 			baseConfigurationReference = 855DD71A7A675D4D9E0DE63545EE5E84 /* Pods-DictaterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -807,7 +800,6 @@
 			baseConfigurationReference = 3D29F05E827C2A54516815AC4AEFAA2F /* Pods-Dictater.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -842,7 +834,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F99E91B67169FF8C414BD0B83930CC1 /* ProgressKit.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -877,7 +868,6 @@
 			baseConfigurationReference = 51D0DCDFBA17F899B2832D63E5F18A53 /* Pods-DictaterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

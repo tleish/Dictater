@@ -48,14 +48,14 @@ class ViewController: NSViewController {
 	
 	@IBAction func openSpeechPreferences(target: AnyObject?)
 	{
-		NSWorkspace.sharedWorkspace().openFile("/System/Library/PreferencePanes/Speech.prefPane")
+        NSWorkspace.shared.openFile("/System/Library/PreferencePanes/Speech.prefPane")
 	}
 	
 	@IBAction func openMenu(target: AnyObject?)
 	{
 		if let view = target as? NSView
 		{
-			view.menu?.popUpMenuPositioningItem(nil, atLocation: view.frame.origin, inView: view.superview)
+            view.menu?.popUp(positioning: nil, at: view.frame.origin, in: view.superview)
 		}
 	}
 	
@@ -69,13 +69,13 @@ class ViewController: NSViewController {
 			
 			if let submenu = item.submenu
 			{
-				for child in submenu.itemArray
+                for child in submenu.items
 				{
 					if child.tag == boundary.rawValue
 					{
-						child.state = NSOnState
+                        child.state = NSControl.StateValue.on
 					} else {
-						child.state = NSOffState
+						child.state = NSControl.StateValue.off
 					}
 				}
 			}

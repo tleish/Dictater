@@ -39,15 +39,15 @@ class Teleprompter : NSViewController, NSWindowDelegate
 		self.buttonController.update()
 	}
 	
-	func updateProgressView()
+    @objc func updateProgressView()
 	{
 		if Dictater.isProgressBarEnabled
 		{
-			self.progressView?.hidden = false
+            self.progressView?.isHidden = false
 			self.buttonController.progressView = self.progressView
 		} else {
 			
-			self.progressView?.hidden = true
+            self.progressView?.isHidden = true
 			self.buttonController.progressView = nil
 		}
 		
@@ -61,13 +61,13 @@ class Teleprompter : NSViewController, NSWindowDelegate
 		
 		self.buttonController.registerEvents()
 		
-		let center = NSNotificationCenter.defaultCenter()
+        let center = NotificationCenter.default
 		
-		center.addObserver(self, selector: #selector(self.updateFont), name: Dictater.TextAppearanceChangedNotification, object: nil)
-		center.addObserver(self, selector: #selector(self.update), name: Speech.ProgressChangedNotification, object: self.speech)
-		center.addObserver(self, selector: #selector(self.updateButtons), name: TeleprompterWindowDelegate.ResizedEvent, object: nil)
+        center.addObserver(self, selector: #selector(self.updateFont), name: NSNotification.Name(rawValue: Dictater.TextAppearanceChangedNotification), object: nil)
+        center.addObserver(self, selector: #selector(self.update), name: NSNotification.Name(rawValue: Speech.ProgressChangedNotification), object: self.speech)
+        center.addObserver(self, selector: #selector(self.updateButtons), name: NSNotification.Name(rawValue: TeleprompterWindowDelegate.ResizedEvent), object: nil)
 		
-		center.addObserver(self, selector: #selector(self.updateProgressView), name:NSUserDefaultsDidChangeNotification, object: nil)
+        center.addObserver(self, selector: #selector(self.updateProgressView), name:UserDefaults.didChangeNotification, object: nil)
 		
 		
 		self.update()
@@ -75,12 +75,12 @@ class Teleprompter : NSViewController, NSWindowDelegate
 	}
 	
 	override func viewWillDisappear() {
-		NSNotificationCenter.defaultCenter().removeObserver(self)
+        NotificationCenter.default.removeObserver(self)
 		
 		self.buttonController.deregisterEvents()
 	}
 	
-	func updateFont() {
+    @objc func updateFont() {
 		if let textView = self.textView
 		{
 			textView.font = Dictater.font
@@ -88,16 +88,16 @@ class Teleprompter : NSViewController, NSWindowDelegate
 			textView.defaultParagraphStyle = paragraphStyle
 			
 			let range = NSMakeRange(0, textView.attributedString().length)
-			textView.textStorage?.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: range)
+            textView.textStorage?.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: range)
 		}
 	}
 	
-	func updateButtons()
+    @objc func updateButtons()
 	{
 		self.buttonController.update()
 	}
 	
-	func update()
+    @objc func update()
 	{
 		if let textView = self.textView
 		{
@@ -108,10 +108,9 @@ class Teleprompter : NSViewController, NSWindowDelegate
 			
 			self.highlightText()
 			
-			if let range = self.speech.range
-			where self.shouldAutoScroll()
+            if let range = self.speech.range, self.shouldAutoScroll()
 			{
-				textView.scrollRangeToVisible(range, smart: true)
+                textView.scrollRangeToVisible(range: range, smart: true)
 			}
 		}
 	}
@@ -125,7 +124,7 @@ class Teleprompter : NSViewController, NSWindowDelegate
 		
 		if let date = self.textView?.scrollDate
 		{
-			let seconds = NSDate().timeIntervalSinceDate(date)
+            let seconds = NSDate().timeIntervalSince(date as Date)
 			
 			if seconds <= 3
 			{
@@ -140,14 +139,14 @@ class Teleprompter : NSViewController, NSWindowDelegate
 	{
 		if let textView = self.textView,
 		let textStorage = textView.textStorage,
-		newRange = self.speech.range
+            let newRange = self.speech.range
 		{
 			textStorage.beginEditing()
 			
-			let fullRange = NSRange.init(location: 0, length: self.speech.text.characters.count)
+			let fullRange = NSRange.init(location: 0, length: self.speech.text.count)
 			for (key, _) in self.highlightAttributes
 			{
-				textStorage.removeAttribute(key, range: fullRange)
+                textStorage.removeAttribute(NSAttributedString.Key(rawValue: key), range: fullRange)
 			}
 			
 			textStorage.addAttributes(self.highlightAttributes, range: newRange)
